@@ -1,0 +1,26 @@
+python nasa_campss.py
+The script will:
+
+Download the CMAPSS dataset (FD001). [file:1]
+
+Load and clean the training data.
+
+Compute RUL per engine unit and generate time-series windows of length 50. [file:1]
+
+Build and train a hybrid LSTM model for:
+
+RUL (regression).
+
+High-risk failure classification within a threshold (e.g., 30 cycles). [file:1]
+
+Plot training/validation MAE and accuracy curves. [file:1]
+
+You can modify key hyperparameters in nasa_campss.py:
+
+SEQUENCE_LENGTH
+
+RISK_THRESHOLD
+
+Model layer sizes, dropout rates, and loss weights.
+
+Number of epochs and batch size.
